@@ -9,5 +9,12 @@ package com.mycompany.exemplobigdecimal;
  * @author aluno
  */
 public class Ordem {
+    private String telefone;
+    private String nome;
+    private String endereco;
+    private String modelo;
+    private String ano;
+    private String placa;
+    
     
 }

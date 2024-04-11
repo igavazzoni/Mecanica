@@ -4,8 +4,7 @@
  */
 package com.mycompany.exemplobigdecimal;
 
-import java.awt.List;
-import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -68,10 +67,11 @@ public class FrameCadastro extends javax.swing.JFrame {
         tbCadastro = new javax.swing.JTable();
         btEditar = new javax.swing.JButton();
         btOrdem = new javax.swing.JButton();
+        btRelatorio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados Cliente"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
 
         jLabel1.setText("Telefone");
 
@@ -201,6 +201,8 @@ public class FrameCadastro extends javax.swing.JFrame {
             }
         });
 
+        btRelatorio.setText("Relatorio");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -209,6 +211,8 @@ public class FrameCadastro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btRelatorio)
+                        .addGap(18, 18, 18)
                         .addComponent(btOrdem)
                         .addGap(29, 29, 29)
                         .addComponent(btEditar))
@@ -230,7 +234,8 @@ public class FrameCadastro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 271, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btEditar)
-                    .addComponent(btOrdem))
+                    .addComponent(btOrdem)
+                    .addComponent(btRelatorio))
                 .addGap(8, 8, 8))
         );
 
@@ -335,6 +340,7 @@ public class FrameCadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btEditar;
     private javax.swing.JButton btOrdem;
+    private javax.swing.JButton btRelatorio;
     private javax.swing.JButton btSalvar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

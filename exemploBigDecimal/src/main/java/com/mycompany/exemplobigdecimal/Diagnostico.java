@@ -9,5 +9,6 @@ package com.mycompany.exemplobigdecimal;
  * @author aluno
  */
 public class Diagnostico {
+    private String diagnostico;
     
 }
