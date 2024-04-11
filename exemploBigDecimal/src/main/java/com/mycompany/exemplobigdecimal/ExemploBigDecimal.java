@@ -14,7 +14,7 @@ public class ExemploBigDecimal {
 
     public static void main(String[] args) {
         
-      new FrameCadastro().setVisible(true);
+     new FrameLogin().setVisible(true);
         
         
         
